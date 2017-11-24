@@ -4,8 +4,8 @@ const apiUrl = '/api/personas';
 // Sync Action
 export const fetchPersonasSuccess = (personas) => {
   return {
-    type: 'FETCH_PERSONAS_SUCCESS',
-    personas
+    type: 'USER/FETCH_PERSONAS_SUCCESS',
+    payload: personas
   }
 };
 //Async Action
@@ -24,4 +24,17 @@ export const fetchPersonas = () => {
         throw(error);
       });
   };
+};
+
+export const selectPersona = (persona) => {
+  return {
+      type: 'USER/EDIT_USER',
+      payload: persona
+  }
+};
+export const addPersona = (persona) => {
+  return {
+      type: 'USER/ADD_USER',
+      payload: persona
+  }
 };

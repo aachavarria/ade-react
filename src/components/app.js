@@ -1,14 +1,17 @@
 import React from 'react'
-import PersonaPage from './persona/personaPage';
+import Personas from './persona/personaPage';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
 require('../styles/app.scss');
 
-export default class App extends React.Component {
-  render () {
-    return (
-      <div>
-        <h1>Change me 3</h1>
-        <PersonaPage/>
-      </div>
-    )
-  }
-}
+const App = ({ children }) => (
+  <div>
+    <Header />
+    <main>
+      {children}
+    </main>
+    <Footer />
+  </div>
+);
+
+export default App;
