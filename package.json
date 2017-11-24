@@ -17,10 +17,17 @@
     "javascript"
   ],
   "dependencies": {
+    "axios": "^0.17.1",
     "express": "^4.15.2",
     "mongojs": "^2.4.1",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-logger": "^1.1.0",
+    "react-promise": "^2.0.0",
+    "react-redux": "^5.0.6",
+    "react-thunk": "^1.0.0",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
